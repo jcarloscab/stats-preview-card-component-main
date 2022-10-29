@@ -1,6 +1,4 @@
-# Frontend Mentor - Stats preview card component solution
-
-Esta es la solución de [Stats preview card component challenge de Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
+# Solución a "Stats preview card component" - Frontend Mentor 
 
 ## Tabla de Contenido
 
@@ -28,8 +26,8 @@ los Usuarios deben:
 
 ### Links
 
-- Solución URL: [Solución]()
-- Live Site URL: [Site]()
+- Solución URL: [Solución](https://www.frontendmentor.io/solutions/stats-preview-card-component-crgWjEAqCL)
+- Live Site URL: [Site](https://jcarloscab.github.io/stats-preview-card-component-main/)
 
 ## Mi Proceso
 
