@@ -1,0 +1,127 @@
+.card {
+  background-color: $card-background;
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  
+  @media screen and (max-width: 375px) {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__content {
+    width: 50%;
+    height: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      padding: 3rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      height: auto;
+      width: 100%;
+      padding: 22rem 1rem 2rem 1rem;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 2rem;
+
+    @media screen and (max-width: 375px) {
+      text-align: center;
+    }
+  }
+
+  &__light {
+    color: $violet;
+  }
+
+  &__description {
+    @media screen and (max-width: 375px) {
+      text-align: center;
+      margin-top: 2rem;
+      line-height: 1.7rem;
+    }
+  }
+
+  &__stats {
+    margin-top: 2rem  ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 375px) {
+      height: 11rem;
+      flex-direction: column;
+    }
+  }
+
+  &__stats-item {
+    display: flex;
+    flex-direction: column;
+    
+    &-amount {
+      color: $white;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    &-title {
+      color: $white60;
+      font-size: 0.6rem;
+      margin-top: 5px;
+    }
+  }
+  
+
+  &__image-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $violet;
+      z-index: 1;
+      position: absolute;
+      opacity: 0.5;
+    }
+    
+    @media screen and (max-width: 375px) {
+      width: 100%;
+      height: 18rem;
+      position: absolute;
+      top: 0;
+    }
+  }
+    
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

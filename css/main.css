@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #090b1a;
+  color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: auto;
+  }
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.card {
+  background-color: #1b1938;
+  width: 70%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.card__content {
+  width: 50%;
+  height: 100%;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .card__content {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card__content {
+    height: auto;
+    width: 100%;
+    padding: 22rem 1rem 2rem 1rem;
+  }
+}
+
+.card__title {
+  color: white;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .card__title {
+    text-align: center;
+  }
+}
+
+.card__light {
+  color: #aa5cdb;
+}
+
+@media screen and (max-width: 375px) {
+  .card__description {
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.7rem;
+  }
+}
+
+.card__stats {
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .card__stats {
+    height: 11rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card__stats-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__stats-item-amount {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card__stats-item-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.6rem;
+  margin-top: 5px;
+}
+
+.card__image-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.card__image-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #aa5cdb;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+  .card__image-container {
+    width: 100%;
+    height: 18rem;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .attribution {
+    margin: 1rem 0;
+  }
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
